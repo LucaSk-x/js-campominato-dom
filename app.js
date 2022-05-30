@@ -69,8 +69,10 @@ uniqueNumber(xCells)
         gridContainer.append(cell);
 
 
+        if (gameOver === false) {
         /* aggiungo un classe al click sul numero */
         cell.addEventListener("click", function () {
+            
             console.log(gameOver);
         
             
@@ -87,6 +89,10 @@ uniqueNumber(xCells)
                 gameOver = true;
             }
         });
+        } else if (gameOver === true) {
+            return
+        }
+
     }
 
 };
