@@ -1,0 +1,38 @@
+:root {
+    --box-size: 50px;
+}
+
+.main-section {
+    height: 100vh;
+}
+
+.nav-right .btn {
+    border: 1px solid black;
+}
+
+main {
+    background-color: #7cffd2;
+    flex-grow: 1;
+}
+
+.grid-container {
+    padding:  4.5rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+/*     width: calc(var(--box-size) * 10); */
+}
+
+.grid-container .cell {
+    height: var(--box-size);
+    width: var(--box-size);
+    border: 2px solid black;
+}
+
+.grid-container .bomb {
+    background-color: rgb(154, 20, 20);
+}
+
+.color-click {
+    background-color: #6495f1;
+}
