@@ -69,29 +69,29 @@ uniqueNumber(xCells)
         gridContainer.append(cell);
 
 
-        if (gameOver === false) {
-        /* aggiungo un classe al click sul numero */
-        cell.addEventListener("click", function () {
-            
-            console.log(gameOver);
+
+    /* aggiungo un classe al click sul numero */
+    cell.addEventListener("click", function () {
         
-            
+        console.log(gameOver);
+    
+        
+        if (gameOver === false) {
             // this = l'elemento che ha generato l'evento usato nel addEventListener
             console.log("hai cliccato il numero", this.innerText);
-        
+    
             const numero = parseInt(this.innerText);
         
             this.classList.add("color-click");
-
+    
             if (numberBomb.includes(numero)) {
                 this.classList.remove("color-click");
                 this.classList.add("bomb");
                 gameOver = true;
             }
-        });
-        } else if (gameOver === true) {
-            return
-        }
+}
+    });
+
 
     }
 
